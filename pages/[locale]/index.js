@@ -46,17 +46,14 @@ export default function Home() {
     setClassical({
       title: ["Classical", "Title"].join(" "),
       desc: ["Classical", "Desc"].join(" "),
-      site: PROTOCOL.concat(DOMAIN, SUFFIX.COM),
     });
     setRecommend({
       title: ["Recommended", "Title"].join(" "),
       desc: ["Recommended", "Desc"].join(" "),
-      site: PROTOCOL.concat(DOMAIN, SUFFIX.WORK),
     });
     setShare({
       title: ["Share", "Title"].join(" "),
       desc: ["Share", "Desc"].join(" "),
-      site: PROTOCOL.concat(SHARE_DOMAIN, SUFFIX.AI),
     });
   }, []);
 
@@ -86,21 +83,32 @@ export default function Home() {
           <div className={styles.card}>
             <h3>{t(classical.title)}</h3>
             <div>
-              <a href={classical.site}>{classical.site}</a>
-              <span className={styles.desc}>（{t(classical.desc)}）</span>
+              <a href="https://liaobots.com">https://liaobots.com</a>
+              <span className={styles.desc}>（需 🪜）</span>
             </div>
             <div>
-              <a href={recommend.site}>{recommend.site}</a>
-              <span className={styles.desc}>（{t(recommend.desc)}）</span>
+              <a href="https://liaobots.work">https://liaobots.work</a>
+              <span className={styles.desc}>（直接访问）</span>
+            </div>
+            <div>
+              <a href="https://liaobots1.work">https://liaobots1.work</a>
+              <span className={styles.desc}>（直接访问，优化线路）</span>
             </div>
           </div>
         </div>
 
+
         <div className={styles.grid}>
           <div className={styles.card}>
             <h3>{t(share.title)}</h3>
-            <a href={share.site}>{share.site}</a>
-            <span className={styles.desc}>（{t(share.desc)}）</span>
+            <div>
+              <a href="https://liaox.ai">https://liaox.ai</a>
+              <span className={styles.desc}>（直接访问）</span>
+            </div>
+            <div>
+              <a href="https://liaox1.work">https://liaox1.work</a>
+              <span className={styles.desc}>（直接访问，优化线路）</span>
+            </div>
           </div>
         </div>
 
