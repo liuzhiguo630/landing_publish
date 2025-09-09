@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 const getStaticProps = makeStaticProps(["common"]);
 export { getStaticPaths, getStaticProps };
 
-const Q_GROUP = "572982126";
+const Q_GROUP = "1059935919";
 const PROTOCOL = "https://";
 const DOMAIN = "liaobots";
 const SHARE_DOMAIN = "x.liaox";
